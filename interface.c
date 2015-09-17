@@ -3,7 +3,7 @@
  * made by Kurian Jacobs. Major features added from the original version:
  * -> Command completion on pressing Tab
  * -> Remebering History when typing a command and saving it to a file called
- * 		".history_file"
+ *    ".history_file"
  * .........................Piyush Bhopalka..................................
  */
 
@@ -553,7 +553,7 @@ int main(int argc, char **argv){
 		loadFileToVirtualDisk();
 	}
 	close(fd);
-	stifle_history(50);
+	stifle_history(50); //limits the size of history file to 50
 	cli(argc, argv); //Loads the Command Line Interface
 	return 0;
 }
